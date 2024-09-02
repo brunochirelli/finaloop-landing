@@ -35,6 +35,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      storybook-addon-theme-changer:
+        specifier: ^0.2.2
+        version: 0.2.2
       vite-tsconfig-paths:
         specifier: ^4.3.2
         version: 4.3.2(typescript@5.5.4)(vite@5.3.5(@types/node@20.14.12)(terser@5.31.3))
@@ -4674,6 +4677,9 @@ packages:
   stop-iteration-iterator@1.0.0:
     resolution: {integrity: sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==}
     engines: {node: '>= 0.4'}
+
+  storybook-addon-theme-changer@0.2.2:
+    resolution: {integrity: sha512-0R2cF9hqLzmW8zF5GJ0fX4bDjxouA1ApkXG7E1PNpED8eBI+SpLfEl+9WRm/LyUZMr5/dff2UhA8sXaIQJhgqw==}
 
   storybook@8.2.6:
     resolution: {integrity: sha512-8j30wDxQmkcqI0fWcSYFsUCjErsY1yTWbTW+yjbwM8DyW18Cud6CwbFRCxjFsH+2M0CjP6Pqs/m1PGI0vcQscQ==}
@@ -10713,6 +10719,8 @@ snapshots:
   stop-iteration-iterator@1.0.0:
     dependencies:
       internal-slot: 1.0.7
+
+  storybook-addon-theme-changer@0.2.2: {}
 
   storybook@8.2.6(@babel/preset-env@7.25.2(@babel/core@7.24.9)):
     dependencies:

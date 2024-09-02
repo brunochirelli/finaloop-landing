@@ -4,6 +4,10 @@ import { AllProviders } from "../src/providers";
 
 import "../src/app/globals.css";
 
+export const globals = {
+  themes: ["finaloop", "dark"],
+};
+
 const preview: Preview = {
   parameters: {
     controls: {

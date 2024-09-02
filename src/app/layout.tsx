@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="finaloop">
       <body className={inter.className}>
         <AllProviders>{children}</AllProviders>
       </body>
