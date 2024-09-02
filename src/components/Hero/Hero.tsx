@@ -1,4 +1,5 @@
 import Image from "next/image";
+import bookImg from "@/assets/images/finaloop-book.png";
 
 export default function Hero() {
   return (
@@ -8,12 +9,7 @@ export default function Hero() {
         & Shopify Businesses
       </h1>
       <div className="relative h-[200px]">
-        <Image
-          className="object-contain"
-          src="/finaloop-book.png"
-          alt="Hero"
-          fill
-        />
+        <Image className="object-contain" src={bookImg} alt="Hero" fill />
       </div>
       <p>
         We like to call it “Your Guide for Profit in 2024.” Grab every template,

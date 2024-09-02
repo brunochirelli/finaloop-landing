@@ -1,12 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import finaloopLogo from "@/assets/logos/finaloop-logo.svg";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center">
+    <header className="flex justify-between items-center p-4 border-b border-b-black">
       <Link href="https://www.finaloop.com/" target="_blank">
-        Finaloop
+        <Image src={finaloopLogo} alt="Finaloop" width={100} height={100} />
       </Link>
-      <button className="btn">Get started</button>
+      <Button>Get started</Button>
     </header>
   );
 }
