@@ -1,10 +1,9 @@
-import ClientComponentExample from "@/components/ClientComponentExample";
+import Hero from "@/components/Hero/Hero";
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-2xl font-bold">Home</h1>
-      <ClientComponentExample />
-    </main>
+    <>
+      <Hero />
+    </>
   );
 }
