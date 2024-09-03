@@ -1,5 +1,6 @@
 import Image from "next/image";
 import bookImg from "@/assets/images/finaloop-book.png";
+import GuideDownloadDialog from "../GuideDownloadDialog/GuideDownloadDialog";
 
 export default function Hero() {
   return (
@@ -15,7 +16,8 @@ export default function Hero() {
         We like to call it “Your Guide for Profit in 2024.” Grab every template,
         definition, and tip as a single PDF below.
       </p>
-      <button className="btn">Get Your Full Guide</button>
+
+      <GuideDownloadDialog />
     </>
   );
 }
