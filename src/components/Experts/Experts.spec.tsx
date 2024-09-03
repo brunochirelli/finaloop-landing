@@ -3,8 +3,21 @@ import Experts from "./Experts";
 
 describe("Experts", () => {
   it("Should render without errors with default elements", () => {
-    render(<Experts />);
+    render(
+      <Experts
+        title="title"
+        authors={[
+          {
+            name: "name",
+            description: "Experts component",
+            image: "/image.jpg",
+          },
+        ]}
+      />,
+    );
 
-    expect(screen.getByText(Experts component")).toBeInTheDocument();
+    expect(screen.getByText("title")).toBeInTheDocument();
+    expect(screen.getByText("name")).toBeInTheDocument();
+    expect(screen.getByText("Experts component")).toBeInTheDocument();
   });
 });

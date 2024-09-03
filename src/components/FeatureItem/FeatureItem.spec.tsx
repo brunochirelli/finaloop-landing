@@ -3,8 +3,9 @@ import FeatureItem from "./FeatureItem";
 
 describe("FeatureItem", () => {
   it("Should render without errors with default elements", () => {
-    render(<FeatureItem />);
+    render(<FeatureItem description="description" icon="icon" title="title" />);
 
-    expect(screen.getByText(FeatureItem component")).toBeInTheDocument();
+    expect(screen.getByText("title")).toBeInTheDocument();
+    expect(screen.getByText("description")).toBeInTheDocument();
   });
 });
