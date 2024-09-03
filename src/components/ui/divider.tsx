@@ -1,5 +1,7 @@
+"use client";
+
 export default function Divider() {
   return (
-    <hr className="mx-4 sm:mx-8 border-black max-w-[--main-width] xl:mx-auto" />
+    <hr className="sm:mx-8 border-black max-w-[--main-width] xl:mx-auto intersect:animate-fade-right intersect:animate-duration-1000" />
   );
 }

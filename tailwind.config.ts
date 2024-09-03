@@ -7,7 +7,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-intersect"), require("tailwindcss-animated")],
   theme: {
     extend: {
       borderRadius: {

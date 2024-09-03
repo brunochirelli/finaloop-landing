@@ -39,7 +39,7 @@ export default function Features({ title }: FeaturesProps) {
 
   return (
     <section className="p-8 max-w-[--main-width] mx-auto">
-      <h2 className="text-center sm:text-left text-2xl sm:text-5xl font-light sm:py-10">
+      <h2 className="text-center sm:text-left text-2xl sm:text-5xl font-light sm:py-10 intersect:animate-fade-right">
         {title}
       </h2>
       <div className="hidden sm:flex justify-between gap-8">

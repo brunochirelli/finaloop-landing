@@ -1,17 +1,18 @@
 "use client";
 
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { useEffect } from "react";
+import { Observer } from "tailwindcss-intersect";
 
-const client = new QueryClient();
-
+/**
+ * If we need to wrap the entire app in a provider, we can do it here.
+ */
 export function AllProviders({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <QueryClientProvider client={client}>
-        {children}
-        <ReactQueryDevtools initialIsOpen={false} />
-      </QueryClientProvider>
-    </>
-  );
+  useEffect(() => {
+    // We also can start client side only services here.
+    if (window) {
+      Observer.start();
+    }
+  }, []);
+
+  return <>{children}</>;
 }

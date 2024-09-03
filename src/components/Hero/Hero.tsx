@@ -15,7 +15,14 @@ export default function Hero({ title }: HeroProps) {
       </h1>
 
       <div className="relative h-60 sm:h-[24] md:h-[30rem] md:col-start-2 md:-col-end-2 md:row-span-2">
-        <Image className="object-contain" src={bookImg} alt="Hero" fill />
+        <Image
+          className="object-contain"
+          src={bookImg}
+          alt="Hero"
+          fill
+          sizes="(max-width:768) 80%"
+          priority
+        />
       </div>
 
       <div className="space-y-4 py-2">
@@ -24,7 +31,7 @@ export default function Hero({ title }: HeroProps) {
           template, definition, and tip as a single PDF below.
         </p>
 
-        <div>
+        <div className="animate-fade-right animate-once">
           <GuideDownloadDialog />
         </div>
       </div>

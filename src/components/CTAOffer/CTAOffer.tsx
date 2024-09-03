@@ -11,15 +11,19 @@ export default function CTAOffer() {
         Get ecommerce accounting software <br />
         <span className="text-primary">that never slows you down</span>
       </h2>
-      <Image src={reportMobileImg} alt="Finaloop card" className="sm:hidden" />
+      <Image
+        src={reportMobileImg}
+        alt="Finaloop card"
+        className="sm:hidden intersect:animate-fade-up"
+      />
       <Image
         src={reportDesktopImg}
         alt="Finaloop card"
-        className="hidden sm:block"
+        className="hidden sm:block intersect:animate-fade-up"
       />
       <div className="text-center space-y-4">
         <div className="mb-2 text-center flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
-          <div>
+          <div className="intersect:animate-jump intersect:animate-once intersect:animate-delay-500">
             <Button size="lg">
               <Link href="https://home.finaloop.com/signup">
                 Start Free Trial
