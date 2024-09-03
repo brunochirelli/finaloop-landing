@@ -10,13 +10,22 @@ export default function Header() {
     <div className="sticky top-0 bg-background/30 backdrop-blur-sm !z-50">
       <header
         className={cn(
-          "flex justify-between items-center p-4 max-w-[--main-width] mx-auto",
+          "flex justify-between items-center p-4 max-w-[--main-width] mx-auto md:px-8",
         )}
       >
         <Link href="https://www.finaloop.com/" target="_blank">
           <Image src={finaloopLogo} alt="Finaloop" width={100} height={100} />
         </Link>
-        <Button>Get started</Button>
+        <div className="flex gap-4 items-center">
+          <Link
+            href="https://www.finaloop.com/pricing"
+            target="_blank"
+            className="hidden md:block"
+          >
+            Pricing
+          </Link>
+          <Button>Get started</Button>
+        </div>
       </header>
       <Divider />
     </div>
