@@ -28,6 +28,7 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --swiper-pagination-color: #9a8a7e;
   }
   .dark {
     --background: 222.2 84% 4.9%;

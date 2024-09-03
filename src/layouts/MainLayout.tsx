@@ -7,9 +7,9 @@ type MainLayoutProps = {
 
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <>
+    <div className="" style={{ maxWidth: "90rem", margin: "0 auto" }}>
       <Header />
       <main>{children}</main>
-    </>
+    </div>
   );
 }
