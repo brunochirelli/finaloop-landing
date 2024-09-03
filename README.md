@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Finaloop Landing Page
 
-## Getting Started
+## Goals
 
-First, run the development server:
+The main goal was to showcase the structure that I imagine for a mid to large app with multiple pages relying in one design system and also the ability to translate figma designs into code. For some of them, I took the freedom to showcase other skills on how I think about the creation and structure of components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Nextjs
+- Typescript
+- Tailwindcss (tailwind-intersect, tailwind-animated, shadcn)
+- react-swiper, react-fast-marquee, next-hubspot
+- Storybook
+- Vitest
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Performance
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Performance is very important, especially when dealing with landing pages that could go in many tools and analytics like Google's analytics and ads, etc.
+Here's the page report:
+![web-vitals](https://github.com/user-attachments/assets/291671dc-e2bd-4cf5-9099-67c382e6eabb)
 
-## Learn More
+Some improvements can be seeing as how we deal and import 3p scripts.
 
-To learn more about Next.js, take a look at the following resources:
+All images are minified using the [tinypng](https://tinypng.com/) website
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Possible improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Some quick improvements are:
 
-## Deploy on Vercel
+- Linting: Quick and easy, I just ignore it for now for the sake of speed.
+- Animations: Could be better enhanced for user interaction.
+- Better parse of 3p scripts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Time
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The total time took me around 8 hours to complete which included setting the project and thinking about the structure that in common day work would take me half of day to develop.
+
+## Conclusion
+
+I love this kind of project because it allows us, especially frontenders to showcase not only code skills but how we think about the entire app, the design team concerns, SEO and user goals, think that I have a lot of familiarity due to my background in advertising agencies.
+
+Hope you guys enjoy this project and feel free to provide some extra feedback. I would love to hear.
