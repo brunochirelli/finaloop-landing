@@ -23,7 +23,7 @@ export default function Author({ author, className }: AuthorProps) {
         />
       </div>
       <h3 className="mb-4 text-xl">{author.name}</h3>
-      <p className="text-sm">{author.description}</p>
+      <p className="text-sm font-light">{author.description}</p>
     </div>
   );
 }

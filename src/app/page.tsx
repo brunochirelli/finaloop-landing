@@ -9,8 +9,16 @@ import CTAOffer from "@/components/CTAOffer/CTAOffer";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <LogosCarousel />
+      <Hero
+        title={
+          <>
+            <span className="text-primary">Profit Unlocked:</span>
+            <br /> Your Guide to Ecommerce Accounting for DTC & Shopify
+            Businesses
+          </>
+        }
+      />
+      <LogosCarousel title="Trusted by thousands of consumer brands" />
       <Features title="What's Inside:" />
       <Experts
         title="About the authors:"
