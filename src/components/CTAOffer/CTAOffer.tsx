@@ -16,12 +16,16 @@ export default function CTAOffer() {
         alt="Finaloop card"
         className="hidden sm:block"
       />
-      <div className="text-center">
-        <div className="space-x-4 mb-2">
-          <Button>Start Free Trial</Button>
-          <Button>Book A Demo</Button>
+      <div className="text-center space-y-4">
+        <div className="mb-2 text-center flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
+          <div>
+            <Button>Start Free Trial</Button>
+          </div>
+          <div>
+            <Button>Book A Demo</Button>
+          </div>
         </div>
-        <small>14 days free. No credit card required</small>
+        <small className="block">14 days free. No credit card required</small>
       </div>
     </section>
   );
