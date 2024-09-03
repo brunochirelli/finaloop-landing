@@ -4,6 +4,7 @@ import Hero from "@/components/Hero/Hero";
 import LogosCarousel from "@/components/LogosCarousel/LogosCarousel";
 import raylaImg from "@/assets/images/rayla-rappaport.png";
 import aaronImg from "@/assets/images/aaron-orendorff.png";
+import CTAOffer from "@/components/CTAOffer/CTAOffer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           },
         ]}
       />
+      <CTAOffer />
     </>
   );
 }
