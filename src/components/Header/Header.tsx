@@ -7,7 +7,7 @@ import Divider from "../ui/divider";
 export default function Header() {
   return (
     <>
-      <header className="flex justify-between items-center p-4 mx-8">
+      <header className="flex justify-between items-center p-4 sm:mx-8">
         <Link href="https://www.finaloop.com/" target="_blank">
           <Image src={finaloopLogo} alt="Finaloop" width={100} height={100} />
         </Link>
