@@ -5,6 +5,8 @@ describe("CTAOffer", () => {
   it("Should render without errors with default elements", () => {
     render(<CTAOffer />);
 
-    expect(screen.getByText("CTAOffer component")).toBeInTheDocument();
+    expect(
+      screen.getByText(/Get ecommerce accounting software/),
+    ).toBeInTheDocument();
   });
 });

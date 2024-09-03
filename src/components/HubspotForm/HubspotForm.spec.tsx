@@ -5,6 +5,6 @@ describe("HubspotForm", () => {
   it("Should render without errors with default elements", () => {
     render(<HubspotForm />);
 
-    expect(screen.getByText("HubspotForm component")).toBeInTheDocument();
+    expect(screen.getByTestId("hs-form")).toBeInTheDocument();
   });
 });

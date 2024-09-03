@@ -5,6 +5,6 @@ describe("GuideDownloadDialog", () => {
   it("Should render without errors with default elements", () => {
     render(<GuideDownloadDialog />);
 
-    expect(screen.getByText("GuideDownloadDialog component")).toBeInTheDocument();
+    expect(screen.getByText("Get Your Full Guide")).toBeInTheDocument();
   });
 });

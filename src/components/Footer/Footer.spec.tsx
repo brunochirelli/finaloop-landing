@@ -5,6 +5,6 @@ describe("Footer", () => {
   it("Should render without errors with default elements", () => {
     render(<Footer />);
 
-    expect(screen.getByText("Footer component")).toBeInTheDocument();
+    expect(screen.getByText("Finaloop, Inc.")).toBeInTheDocument();
   });
 });

@@ -3,8 +3,8 @@ import LogosCarousel from "./LogosCarousel";
 
 describe("LogosCarousel", () => {
   it("Should render without errors with default elements", () => {
-    render(<LogosCarousel />);
+    render(<LogosCarousel title="title" />);
 
-    expect(screen.getByText("LogosCarousel component")).toBeInTheDocument();
+    expect(screen.getByText("title")).toBeInTheDocument();
   });
 });
