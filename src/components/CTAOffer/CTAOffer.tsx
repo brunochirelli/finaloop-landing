@@ -2,6 +2,7 @@ import Image from "next/image";
 import reportMobileImg from "@/assets/images/report-mobile.png";
 import reportDesktopImg from "@/assets/images/report-desktop.png";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function CTAOffer() {
   return (
@@ -19,10 +20,16 @@ export default function CTAOffer() {
       <div className="text-center space-y-4">
         <div className="mb-2 text-center flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
           <div>
-            <Button>Start Free Trial</Button>
+            <Button size="lg">
+              <Link href="https://home.finaloop.com/signup">
+                Start Free Trial
+              </Link>
+            </Button>
           </div>
           <div>
-            <Button>Book A Demo</Button>
+            <Button size="lg" variant="outline">
+              Book A Demo
+            </Button>
           </div>
         </div>
         <small className="block">14 days free. No credit card required</small>

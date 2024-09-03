@@ -18,11 +18,11 @@ export default function GuideDownloadDialog() {
   return (
     <HubspotProvider>
       <Dialog>
-        <Button asChild>
+        <Button asChild size={"lg"}>
           <DialogTrigger>Get Your Full Guide</DialogTrigger>
         </Button>
 
-        <DialogContent>
+        <DialogContent aria-describedby="Fill out the form">
           <DialogTitle>
             <Image src={reportImg} alt="" className="mb-4" />
             <p>
