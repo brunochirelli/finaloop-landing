@@ -11,7 +11,7 @@ export default function Author({ author, className }: AuthorProps) {
     <div className="w-full max-w-[440px]">
       <div
         className={cn(
-          "relative w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden mx-auto md:mx-0 mb-14 intersect:animate-fade-up intersect-full",
+          "relative w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden mx-auto md:mx-0 mb-14",
           className,
         )}
       >
