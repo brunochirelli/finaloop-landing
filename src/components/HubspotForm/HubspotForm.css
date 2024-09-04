@@ -1,8 +1,9 @@
 #hubspot-form {
-  box-sizing: border-box;
   display: block;
+
   /* To avoid CLS we set an initial min-height... */
   min-height: 21rem;
+  box-sizing: border-box;
 
   /* ...and override it when the form is loaded */
   &:has(form) {
@@ -13,25 +14,25 @@
     margin-bottom: 1rem;
 
     ul {
-      margin-top: 0.5rem;
       padding: 0 0.25rem;
+      margin-top: 0.5rem;
     }
   }
 
   input {
-    border: 1px solid gray;
-    padding: 0.5rem;
-    background-color: var(--background);
-    border-radius: 0.625rem;
     width: 100%;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.625rem;
+    background-color: var(--background);
 
     &[type="submit"] {
+      padding: 0.7rem 1rem;
+      border: none;
+      border-radius: 10rem;
       background-color: hsl(var(--primary));
       color: hsl(var(--primary-foreground));
-      border: none;
       cursor: pointer;
-      border-radius: 10rem;
-      padding: 0.7rem 1rem;
       font-weight: 300;
     }
   }
@@ -39,11 +40,11 @@
   /* Submit styles can or cannot be tailwind components despite not recommended
   anymore in docs */
   .hs-submit {
+    width: fit-content;
+    border: none;
     margin: 0 auto;
     background-color: var(--primary);
     color: var(--primary-foreground);
-    border: none;
-    width: fit-content;
     cursor: pointer;
   }
 }
