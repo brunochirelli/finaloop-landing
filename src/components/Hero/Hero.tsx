@@ -3,8 +3,7 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 
 import bookImg from "@/assets/images/finaloop-book.png";
-
-import GuideDownloadDialog from "../GuideDownloadDialog/GuideDownloadDialog";
+import GuideDownloadDialog from "@/components/GuideDownloadDialog/GuideDownloadDialog";
 
 type HeroProps = {
   title: ReactNode;

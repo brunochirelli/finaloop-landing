@@ -3,9 +3,7 @@ import Link from "next/link";
 
 import reportDesktopImg from "@/assets/images/report-desktop.png";
 import reportMobileImg from "@/assets/images/report-mobile.png";
-
-import { Button } from "../ui/button";
-
+import { Button } from "@/components/ui/button";
 
 export default function CTAOffer() {
   return (

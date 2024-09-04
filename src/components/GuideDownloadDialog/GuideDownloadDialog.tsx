@@ -1,20 +1,18 @@
 "use client";
 
-
 import Image from "next/image";
 import { HubspotProvider } from "next-hubspot";
 
 import reportImg from "@/assets/images/app-dashboard-mock.png";
-
-import HubspotForm from "../HubspotForm/HubspotForm";
-import { Button } from "../ui/button";
+import HubspotForm from "@/components/HubspotForm/HubspotForm";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogTitle,
   DialogTrigger,
-} from "../ui/dialog";
+} from "@/components/ui/dialog";
 
 export default function GuideDownloadDialog() {
   return (

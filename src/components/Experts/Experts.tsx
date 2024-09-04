@@ -1,6 +1,5 @@
+import Author from "@/components/Author/Author";
 import type { Author as AuthorType } from "@/shared/types";
-
-import Author from "../Author/Author";
 
 type ExpertsProps = {
   title: string;

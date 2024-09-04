@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-import Divider from "../ui/divider";
+import Divider from "@/components/ui/divider";
 
 type LogosCarouselProps = {
   title: string;

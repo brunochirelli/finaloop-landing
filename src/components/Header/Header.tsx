@@ -2,11 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import finaloopLogo from "@/assets/logos/finaloop-logo.svg";
+import { Button } from "@/components/ui/button";
+import Divider from "@/components/ui/divider";
 import { cn } from "@/lib/utils";
-
-import { Button } from "../ui/button";
-import Divider from "../ui/divider";
-
 
 export default function Header() {
   return (

@@ -3,7 +3,8 @@
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:storybook/recommended",
-    "plugin:@tanstack/eslint-plugin-query/recommended"
+    "plugin:@tanstack/eslint-plugin-query/recommended",
+    "plugin:@dword-design/import-alias/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -69,6 +70,14 @@
         "ignoreCase": true,
         "callbacksLast": true,
         "reservedFirst": true
+      }
+    ],
+    "@dword-design/import-alias/prefer-alias": [
+      "error",
+      {
+        "alias": {
+          "@": "./src"
+        }
       }
     ]
   }
