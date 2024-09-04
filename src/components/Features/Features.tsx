@@ -1,9 +1,10 @@
 "use client";
 
-import FeatureItem from "../FeatureItem/FeatureItem";
 import crownIcon from "@/assets/icons/crown-icon.svg";
 import laptopIcon from "@/assets/icons/laptop-icon.svg";
 import laptopShopifyIcon from "@/assets/icons/laptop-shopify-icon.svg";
+
+import FeatureItem from "../FeatureItem/FeatureItem";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -49,7 +50,7 @@ export default function Features({ title }: FeaturesProps) {
       </div>
 
       <div className="sm:hidden">
-        <Swiper pagination={true} modules={[Pagination]}>
+        <Swiper modules={[Pagination]} pagination={true}>
           {features.map((feature, i) => (
             <SwiperSlide key={`feature-${i}`}>
               <FeatureItem {...feature} />

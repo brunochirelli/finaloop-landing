@@ -1,4 +1,5 @@
 import type { Author as AuthorType } from "@/shared/types";
+
 import Author from "../Author/Author";
 
 type ExpertsProps = {
@@ -14,8 +15,8 @@ export default function Experts({ authors, title }: ExpertsProps) {
         {authors.map((author, i) => {
           return (
             <Author
-              author={author}
               key={`${author.name}-${i}`}
+              author={author}
               className={i === 1 ? "bg-orange-200" : "bg-slate-100"}
             />
           );

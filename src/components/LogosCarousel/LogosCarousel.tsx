@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+
 import Divider from "../ui/divider";
 
 type LogosCarouselProps = {
@@ -16,15 +17,15 @@ export default function LogosCarousel({ title }: LogosCarouselProps) {
           {title}
         </h2>
 
-        <Marquee pauseOnHover className="!absolute !left-0">
+        <Marquee className="!absolute !left-0" pauseOnHover>
           {logos.map((logo) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              className="px-6 max-h-16"
               key={logo}
-              src={logo}
               alt=""
+              className="px-6 max-h-16"
               loading="lazy"
+              src={logo}
             />
           ))}
         </Marquee>

@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import { cn } from "@/lib/utils";
 import type { Author } from "@/shared/types";
-import Image from "next/image";
 
 type AuthorProps = {
   author: Author;
@@ -16,10 +17,10 @@ export default function Author({ author, className }: AuthorProps) {
         )}
       >
         <Image
-          src={author.image}
           alt={author.name}
-          fill
           className="object-cover"
+          src={author.image}
+          fill
         />
       </div>
       <h3 className="mb-4 text-xl">{author.name}</h3>

@@ -1,8 +1,11 @@
 import Image from "next/image";
-import reportMobileImg from "@/assets/images/report-mobile.png";
-import reportDesktopImg from "@/assets/images/report-desktop.png";
-import { Button } from "../ui/button";
 import Link from "next/link";
+
+import reportDesktopImg from "@/assets/images/report-desktop.png";
+import reportMobileImg from "@/assets/images/report-mobile.png";
+
+import { Button } from "../ui/button";
+
 
 export default function CTAOffer() {
   return (
@@ -12,14 +15,14 @@ export default function CTAOffer() {
         <span className="text-primary">that never slows you down</span>
       </h2>
       <Image
-        src={reportMobileImg}
         alt="Finaloop card"
         className="sm:hidden intersect:animate-fade-up"
+        src={reportMobileImg}
       />
       <Image
-        src={reportDesktopImg}
         alt="Finaloop card"
         className="hidden sm:block intersect:animate-fade-up"
+        src={reportDesktopImg}
       />
       <div className="text-center space-y-4">
         <div className="mb-2 text-center flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">

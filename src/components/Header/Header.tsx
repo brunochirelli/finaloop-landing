@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
+
 import finaloopLogo from "@/assets/logos/finaloop-logo.svg";
-import Divider from "../ui/divider";
 import { cn } from "@/lib/utils";
+
+import { Button } from "../ui/button";
+import Divider from "../ui/divider";
+
 
 export default function Header() {
   return (
@@ -14,13 +17,13 @@ export default function Header() {
         )}
       >
         <Link href="https://www.finaloop.com/" target="_blank">
-          <Image src={finaloopLogo} alt="Finaloop" width={100} height={100} />
+          <Image alt="Finaloop" height={100} src={finaloopLogo} width={100} />
         </Link>
         <div className="flex gap-4 items-center">
           <Link
+            className="hidden md:block"
             href="https://www.finaloop.com/pricing"
             target="_blank"
-            className="hidden md:block"
           >
             Pricing
           </Link>

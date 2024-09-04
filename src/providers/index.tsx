@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+
 import { Observer } from "tailwindcss-intersect";
 
 /**

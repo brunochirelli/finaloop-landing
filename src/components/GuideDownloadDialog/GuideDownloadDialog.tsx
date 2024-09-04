@@ -1,6 +1,13 @@
 "use client";
 
+
+import Image from "next/image";
 import { HubspotProvider } from "next-hubspot";
+
+import reportImg from "@/assets/images/app-dashboard-mock.png";
+
+import HubspotForm from "../HubspotForm/HubspotForm";
+import { Button } from "../ui/button";
 import {
   Dialog,
   DialogContent,
@@ -9,22 +16,17 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 
-import reportImg from "@/assets/images/app-dashboard-mock.png";
-import Image from "next/image";
-import HubspotForm from "../HubspotForm/HubspotForm";
-import { Button } from "../ui/button";
-
 export default function GuideDownloadDialog() {
   return (
     <HubspotProvider>
       <Dialog>
-        <Button asChild size={"lg"}>
+        <Button size={"lg"} asChild>
           <DialogTrigger>Get Your Full Guide</DialogTrigger>
         </Button>
 
         <DialogContent aria-describedby="Fill out the form">
           <DialogTitle>
-            <Image src={reportImg} alt="" className="mb-4" />
+            <Image alt="" className="mb-4" src={reportImg} />
             <p>
               <span className="text-primary">Profit Unlocked:</span> Your Guide
               to Ecommerce Accounting for DTC & Shopify Businesses

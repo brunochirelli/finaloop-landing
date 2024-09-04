@@ -9,5 +9,5 @@ export default function HubspotForm() {
     target: "#hubspot-form",
   });
 
-  return <span id="hubspot-form" data-testid="hs-form"></span>;
+  return <span data-testid="hs-form" id="hubspot-form"></span>;
 }

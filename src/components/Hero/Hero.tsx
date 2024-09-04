@@ -1,7 +1,10 @@
-import Image from "next/image";
-import bookImg from "@/assets/images/finaloop-book.png";
-import GuideDownloadDialog from "../GuideDownloadDialog/GuideDownloadDialog";
 import { ReactNode } from "react";
+
+import Image from "next/image";
+
+import bookImg from "@/assets/images/finaloop-book.png";
+
+import GuideDownloadDialog from "../GuideDownloadDialog/GuideDownloadDialog";
 
 type HeroProps = {
   title: ReactNode;
@@ -16,11 +19,11 @@ export default function Hero({ title }: HeroProps) {
 
       <div className="relative h-60 sm:h-[24] md:h-[30rem] md:col-start-2 md:-col-end-2 md:row-span-2">
         <Image
-          className="object-contain"
-          src={bookImg}
           alt="Hero"
-          fill
+          className="object-contain"
           sizes="(max-width:768) 80%"
+          src={bookImg}
+          fill
           priority
         />
       </div>

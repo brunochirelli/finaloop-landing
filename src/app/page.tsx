@@ -1,10 +1,10 @@
+import aaronImg from "@/assets/images/aaron-orendorff.png";
+import raylaImg from "@/assets/images/rayla-rappaport.png";
+import CTAOffer from "@/components/CTAOffer/CTAOffer";
 import Experts from "@/components/Experts/Experts";
 import Features from "@/components/Features/Features";
 import Hero from "@/components/Hero/Hero";
 import LogosCarousel from "@/components/LogosCarousel/LogosCarousel";
-import raylaImg from "@/assets/images/rayla-rappaport.png";
-import aaronImg from "@/assets/images/aaron-orendorff.png";
-import CTAOffer from "@/components/CTAOffer/CTAOffer";
 
 export default function Home() {
   return (
@@ -21,7 +21,6 @@ export default function Home() {
       <LogosCarousel title="Trusted by thousands of consumer brands" />
       <Features title="What's Inside:" />
       <Experts
-        title="About the authors:"
         authors={[
           {
             name: "Rayla Rappaport",
@@ -36,6 +35,7 @@ export default function Home() {
             image: aaronImg,
           },
         ]}
+        title="About the authors:"
       />
       <CTAOffer />
     </>

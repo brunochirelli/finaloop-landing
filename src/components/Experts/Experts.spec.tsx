@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
+
 import Experts from "./Experts";
 
 describe("Experts", () => {
   it("Should render without errors with default elements", () => {
     render(
       <Experts
-        title="title"
         authors={[
           {
             name: "name",
@@ -13,6 +13,7 @@ describe("Experts", () => {
             image: "/image.jpg",
           },
         ]}
+        title="title"
       />,
     );
 
