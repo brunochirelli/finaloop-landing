@@ -1,16 +1,16 @@
 "use client";
 
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import crownIcon from "@/assets/icons/crown-icon.svg";
 import laptopIcon from "@/assets/icons/laptop-icon.svg";
 import laptopShopifyIcon from "@/assets/icons/laptop-shopify-icon.svg";
 
 import FeatureItem from "../FeatureItem/FeatureItem";
-
-import "swiper/css";
-import "swiper/css/pagination";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 
 type FeaturesProps = {
   title: string;
