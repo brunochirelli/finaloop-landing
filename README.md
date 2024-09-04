@@ -27,7 +27,7 @@ All images are minified using the [tinypng](https://tinypng.com/) website
 
 Some quick improvements are:
 
-- Linting: Quick and easy, I just ignore it for now for the sake of speed.
+- ~~Linting: Quick and easy, I just ignore it for now for the sake of speed.~~
 - Animations: Could be better enhanced for user interaction.
 - Better parse of 3p scripts.
 
