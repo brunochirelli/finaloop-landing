@@ -1,7 +1,10 @@
 "use client";
 
+import "lenis/dist/lenis.css";
+
 import { useEffect } from "react";
 
+import { ReactLenis } from "lenis/react";
 import { Observer } from "tailwindcss-intersect";
 
 /**
@@ -15,5 +18,5 @@ export function AllProviders({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
-  return <>{children}</>;
+  return <ReactLenis root>{children}</ReactLenis>;
 }
